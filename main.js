@@ -46,17 +46,14 @@ cats.display();
 //  var cat = cats.catBio[i];
 
 $(".cat-entry").each(function(index){
-  $(this).on("click",function(){
-    $(this).clone().appendTo("#display");
-      });
-});
-$(".cat-entry").each(function(index){
   var count = 0;
   $(this).on("click",function(){
+    $(this).clone().appendTo("#display");
     count ++;
-    $("#unique_count").html(count + "times clicked");
+      $("#unique_count").html(count + "times clicked");
       });
 });
+
 
 /*$(document).ready(function(){
 
